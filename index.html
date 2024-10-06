@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a portfolio website">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-------------------------------------------------------------header design-------------------------------------------------------------->
+    <header class="header">
+       <a href="#" class="logo">Portfolio</a>
+       <i class='bx bx-menu' id="menu-icon"></i>
+       <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+       </nav>
+    </header>
+
+<!------------------------------------------------------------------Home------------------------------------------------------------------->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,Its ME</h3>
+            <h1>Arjun PJ</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p> a passionate MERN Full Stack Web Developer with a strong foundation in building dynamic and responsive web applications. I specialize in developing user-friendly front-end interfaces with React and CSS, and creating robust back-end systems using Node.js, Express, and MongoDB. With a focus on clean, efficient code and seamless user experiences, I'm always excited to tackle new challenges and bring innovative ideas to life in the digital world."</p>
+            <div class="social-media">
+                <a href="https://github.com/ARJUN-PJ-ACHU"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/arjun-pj/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://x.com/Arjun_pj11"><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/bkg-removebg-preview (1).png" alt="">
+        </div>
+    </section>
+
+<!------------------------------------------------------------------About------------------------------------------------------------------->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/bc-removebg-preview (1).png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p>I'm someone who's passionate about coding and loves the problem-solving side of it. My journey in programming has been filled with challenges and exciting projects. Right now, I'm diving deep into web development, especially the MEAN and MERN stacks. I’ve already worked on cloning websites like Amazon and Apple to sharpen my skills, making them responsive and improving their functionality as I learn.</p>
+            <a href=""class="btn">Read More</a>
+        </div>
+    <a href="#skill"><button class="btn skill-view">Skill<i class='bx bx-chevron-down' id="skill-icon"></i></button></a>
+    </section>
+
+
+
+    <!------------------------------------Skill------------------------------------------>
+
+    <section class="skill skill-hide" id="skill">
+        <h2><span>Skills</span></h2>
+        <div class="skill-container">
+            <div class="skill-box">
+            <ul>
+                <li>
+                    <label for="HTML5">HTML</label>
+                    <progress max="100" value="80"></progress>
+                </li>
+                
+                <li>
+                    <label for="CSS3">CSS</label>
+                    <progress max="100" value="80"></progress>
+                    </li>
+                    <li>
+                        <label for="Javascript">Javascript</label>
+                        <progress max="100" value="60"></progress>
+                    </li>
+                    <li>
+                        <label for="Bootstrap5">Bootstrap</label>
+                        <progress max="100" value="80"></progress>
+                    </li>
+                    <li>
+                        <label for="Tailwind">Tailwind</label>
+                        <progress max="100" value="60"></progress>
+                    </li>
+                    <li>
+                        <label for="NodeJS">NodeJS</label>
+                        <progress max="100" value="40"></progress>
+                    </li>
+                    <li>
+                        <label for="ReactJS">ReactJS</label>
+                        <progress max="100" value="10"></progress>
+                    </li>
+                    <li>
+                        <label for="Angular">Angular</label>
+                        <progress max="100" value="10"></progress>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------------------------------Services------------------------------------------------------------------->
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+       
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>
+                    I offer web development services, creating responsive, user-friendly websites with expertise in MEAN and MERN stacks. From simple sites to complex apps, I deliver solutions optimized for performance and SEO.</p>
+                <a href="#"class="btn">Read More"></a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint' ></i>
+                <h3>Graphics Design</h3>
+                <p>I offer graphic design services to elevate your brand with custom logos, brochures, and digital assets. My designs ensure a cohesive, visually appealing presence that resonates with your audience across all platforms.</p>
+                <a href="#"class="btn">Read More"></a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt' ></i>
+                <h3>Digital Marketing</h3>
+                <p>
+                    Digital marketing is crucial for businesses today, encompassing strategies like SEO, social media, email marketing, content marketing, and PPC advertising. These channels help engage audiences, build brand awareness, and drive conversions for success.</p>
+                <a href="#"class="btn">Read More"></a>
+            </div>
+        </div>
+    </section>
+
+<!----------------------------------------------------------------Portfolio---------------------------------------------------------------->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>A Portfolio Website using HTML,CSS and Javascript.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>A Stone Paper Scissor game using HTML,CSS and Javascript</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Gaming Website using HTML,CSS,Javascript and Bootstrap  </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>A Tic Tac Toe Game using HTML,CSS,Javascript</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h3>Web Design</h3>
+                    <p>Netflix clone using HTML and CSS.</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                        <h3>Web Design</h3>
+                        <p>Amazon clone created using HTML and CSS. </p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!----------------------------------------------------------------Contact----------------------------------------------------------------->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form>
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="number" placeholder="Mobile Number">
+                <input type="text" id="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="body" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn" onclick="sendmail()">
+        </form>
+    </section>
+
+<!----------------------------------------------------------------Footer------------------------------------------------------------------->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Arjun PJ | All Right reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+       <script src="https://unpkg.com/scrollreveal"></script> 
+       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+       <script src="script.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "gLTEATC5_yxJx0Y9c",
+            });
+        })();
+        </script>
+</body>
+</html>
