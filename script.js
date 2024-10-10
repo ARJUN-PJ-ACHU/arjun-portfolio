@@ -60,13 +60,34 @@ window.onscroll = () => {
    
  });
  
-function sendmail(){
+ function sendmail(event) {
+    event.preventDefault();
+    
     let params = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        body: document.getElementById('body').value,
+        subject: document.getElementById('subject').value,
         body: document.getElementById('body').value,
         number: document.getElementById('number').value
+    };
+
+    if (!params.name || !params.email || !params.subject || !params.body || !params.number) {
+        alert("Please fill in all fields.");
+        return;
     }
-    emailjs.send("service_y8q1sv8","template_7aikvqg",params).then(alert("Email send!!"));
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(params.email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    emailjs.send("service_y8q1sv8", "template_7aikvqg", params)
+        .then(function(response) {
+            console.log("Email sent successfully!", response.status, response.text);
+            alert("Email sent successfully!");
+        }, function(error) {
+            console.error("Failed to send email.", error);
+            alert("Failed to send email. Please try again later.");
+        });
 }
